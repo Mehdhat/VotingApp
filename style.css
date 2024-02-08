@@ -94,6 +94,7 @@
             font-size: 1.8rem;
             margin-top: 10px;
             word-wrap: break-word;
+            list-style: none;
         }
 
         .voting-app ul li span {
@@ -101,13 +102,21 @@
             padding-left: 10px;
         }
 
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 762px) {
             .voting-app {
                 padding: 10px;
-                width: 60%;
+                width: 90%;
             }
+         input{
+            width: max-content;
+            font-size: 1.3rem;
+            padding: 5px;
+         }   
             button{
                 display: block;
                 margin: 0 auto;
+            }
+            ul li{
+                text-align: center;
             }
         }
