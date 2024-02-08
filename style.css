@@ -1,100 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Merriweather&display=swap');
 
-* {
-    font-family: 'Caveat', cursive;
-    background-color: #1a1a1a;
-    margin: 0;
-    padding: 0;
-}
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Merriweather&display=swap');
 
-body {
-    background-color:transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+        * {
+            font-family: 'Caveat', cursive;
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+        }
 
-.container {
-    background-color: #1a1a1a;
-}
+        body {
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
 
-.voting-app {
-    width: 80%;
-    max-width: 600px;
-    margin: auto;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+        .container {
+            background-color: #1a1a1a;
+            width: 100%;
+            padding: 0 10px;
+        }
 
-.voting-app h2 {
-    font-size: 2.8rem;
-    text-align: center;
-    color: white;
-}
+        .voting-app {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
 
-.row {
-    display: flex;
-    gap: 10px;
-}
+        .voting-app h2 {
+            font-size: 2.8rem;
+            text-align: center;
+            color: white;
+        }
 
-.voting-app input {
-    flex: 1;
-    background-color: #333;
-    color: white;
-    border: none;
-    outline: none;
-    text-align: center;
-    font-size: 1.8rem;
-    padding: 10px;
-    border-radius: 5px 0 0 5px;
-    height: 30px;
-}
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
 
-button {
-  background-image: linear-gradient(-180deg, #00D775, #00BD68);
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
-  height: 50px;
-  line-height: 44px;
-  outline: 0;
-  overflow: hidden;
-  padding: 0 20px;
-  pointer-events: auto;
-  position: relative;
-  text-align: center;
-  touch-action: manipulation;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: top;
-  white-space: nowrap;
-  width: 100px;
-  z-index: 9;
-  border: 0;
-}
+        .voting-app input {
+            flex: 1;
+            background-color: #333;
+            color: white;
+            border: none;
+            outline: none;
+            text-align: center;
+            font-size: 1.8rem;
+            padding: 10px;
+            border-radius: 5px 0 0 5px;
+            height: 30px;
+        }
 
-button:hover {
-  background: #00bd68;
-}
+        button {
+            background-image: linear-gradient(-180deg, #00D775, #00BD68);
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+            height: 50px;
+            line-height: 44px;
+            outline: 0;
+            overflow: hidden;
+            padding: 0 20px;
+            pointer-events: auto;
+            position: relative;
+            text-align: center;
+            touch-action: manipulation;
+            user-select: none;
+            -webkit-user-select: none;
+            vertical-align: top;
+            white-space: nowrap;
+            width: 100%;
+            max-width: 120px;
+            z-index: 9;
+            border: 0;
+        }
 
-.voting-app ul li {
-    color: white;
-    font-size: 1.8rem;
-    margin-top: 10px;
-}
+        button:hover {
+            background: #00bd68;
+        }
 
-.voting-app ul li span {
-    color: white;
-    padding-left: 10px;
-}
+        .voting-app ul li {
+            color: white;
+            font-size: 1.8rem;
+            margin-top: 10px;
+            word-wrap: break-word;
+        }
 
-@media only screen and (max-width: 768px) {
-    .voting-app {
-        width: 90%;
-    }
-}
+        .voting-app ul li span {
+            color: white;
+            padding-left: 10px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .voting-app {
+                padding: 10px;
+                width: 60%;
+            }
+            button{
+                display: block;
+                margin: 0 auto;
+            }
+        }
